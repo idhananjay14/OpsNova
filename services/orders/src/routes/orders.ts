@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import { query } from '../database/connection';
 
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'opsnova2024';
+const JWT_SECRET = process.env.JWT_SECRET || 'opsnova2026';
 
 const getUserId = (req: express.Request): string | null => {
 const token = req.headers.authorization?.replace('Bearer ', '');
